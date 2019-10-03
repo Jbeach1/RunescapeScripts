@@ -31,6 +31,10 @@ public class airOrb extends AbstractScript {
 	Tile ladder1 = new Tile(3089, 9971, 0);
 
 	String state = "start";
+	
+	public void onStart() {
+		log("lets get some orbs");
+	}
 
 	public int onLoop() {
 
@@ -192,3 +196,12 @@ public class airOrb extends AbstractScript {
 			sleep(sleepTime, sleepTime);
 			
 	}
+	
+	
+	
+
+	public void onExit() {
+		log("level achieved:" + getSkills().getRealLevel(Skill.MAGIC));
+	}
+	
+}
