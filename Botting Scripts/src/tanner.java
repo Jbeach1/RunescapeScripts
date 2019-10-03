@@ -1,4 +1,4 @@
-package script4;
+
 
 import java.awt.Point;
 
